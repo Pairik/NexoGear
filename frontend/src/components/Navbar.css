@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  background-color: #222;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-user {
+  color: white;
+}
+
+.logout-button {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+}
+
+.navbar-brand-section {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.navbar-contact-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  color: #cccccc;
+
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.navbar-contact-info span {
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .navbar-contact-info {
+    display: none;
+  }
+}
